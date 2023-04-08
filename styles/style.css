@@ -520,7 +520,7 @@ img,picture,video,canvas,svg{
 }
 
 #footer{
-    padding: 2rem 15rem;
+    padding: 2rem 10rem;
     color: #fff;
 }
 .footer-container{
@@ -649,6 +649,9 @@ img,picture,video,canvas,svg{
 
     html{
         font-size: 50%;
+    }
+    .footer-container{
+        padding:2rem 10rem;
     }
     .branches{
         align-items: flex-start;
