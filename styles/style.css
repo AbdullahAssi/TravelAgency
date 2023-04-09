@@ -182,13 +182,25 @@ img,picture,video,canvas,svg{
     font-size: 1.3rem;
     color: var(--light-color);
     margin-left: 2rem;
+    position: relative;
     text-decoration: none;
+    padding:  0 7px;
 }
 
-.header .navbar a:hover{
-    color:var(--main-color);
-    text-decoration: dotted underline;
+.header .navbar a::after{
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    transition: all 0.7s ease;
 }
+.header .navbar a:hover::after{
+    width: 100%;
+}
+
 
 #menu-btn{
     cursor: pointer;
@@ -238,7 +250,7 @@ img,picture,video,canvas,svg{
     filter: brightness(70%);
 }
 
-.about-heading>h1{
+.book-heading>h1{
     display: flex;
     text-align: center;
     justify-content: center;
@@ -329,7 +341,7 @@ img,picture,video,canvas,svg{
 .service-heading{
     margin: 2rem 2rem;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 800;
     color: #19173b;
 }
@@ -348,15 +360,15 @@ img,picture,video,canvas,svg{
 }
 .service-box i{
     padding: 1rem;
-    font-size: 4rem;
+    font-size: 3rem;
     color: var(--main-color);
 }
 .service-box h3{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--main-color);
 }
 .service-box p{
-    font-size: 1.1rem;
+    font-size: .7rem;
 }
 
 .service-box:hover{
@@ -368,9 +380,9 @@ img,picture,video,canvas,svg{
     padding: 2rem 5rem;
 }
 
-.gallery__heading{
+.gallery-heading{
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 800;
     color: #19173b;
     padding: 2rem 0;
@@ -381,44 +393,44 @@ img,picture,video,canvas,svg{
 	transition: 0.3s;
 }
 
-.gallery:hover .gallery__image {
+.gallery:hover .gallery-image {
 	filter: grayscale(1);
 }
 
-.gallery__column {
+.gallery-column {
 	display: flex;
 	flex-direction: column;
 	width: 25%;
 }
 
-.gallery__link {
+.gallery-link {
 	margin: 2px;
 	overflow: hidden;
 }
 
-.gallery__link:hover .gallery__image {
+.gallery-link:hover .gallery-image {
 	filter: grayscale(0);
 }
 
-.gallery__link:hover .gallery__caption {
+.gallery-link:hover .gallery-caption {
 	opacity: 1;
 }
 
-.gallery__thumb {
+.gallery-thumb {
 	position: relative;
 }
 
-.gallery__image {
+.gallery-image {
 	display: block;
 	width: 100%;
 	transition: 0.3s;
 }
 
-.gallery__image:hover {
+.gallery-image:hover {
 	transform: scale(1.1);
 }
 
-.gallery__caption {
+.gallery-caption {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -429,7 +441,7 @@ img,picture,video,canvas,svg{
 	color: white;
 	opacity: 0;
 	background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
-	transition: 0.3s;
+	transition: 2.5s;
 }
 
 
@@ -438,7 +450,7 @@ img,picture,video,canvas,svg{
 }
 .review-heading{
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 800;
     color: #19173b;
     padding: 2rem 0;
@@ -475,7 +487,7 @@ img,picture,video,canvas,svg{
 }
 .contact-heading{
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 800;
     color: #19173b;
     padding: 2rem 0;
@@ -541,6 +553,7 @@ img,picture,video,canvas,svg{
 .footer-1 .icons{
     margin-top: -3rem;
     margin-left: 7rem;
+    cursor: pointer;
     font-size: 3rem;
     color:  var(--main-color);
 }
@@ -642,6 +655,9 @@ img,picture,video,canvas,svg{
     #footer{
         padding: 2rem 2rem;
     }
+    .gallery-caption{
+        font-size: 2rem;
+    }
 
 }
 
@@ -658,5 +674,8 @@ img,picture,video,canvas,svg{
     }
     .custom-btn{
         width: 90%;
+    }
+    .gallery-caption{
+        font-size: 1rem;
     }
 }
