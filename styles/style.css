@@ -6,7 +6,7 @@
     --border:.1rem solid rgba(0,0,0,.1);
     --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
 
-    --loading-text-gradient: linear-gradient(90deg, transparent 0% 16.66%, var(--smoky-black-3) 33.33% 50%,  transparent 66.66% 75%);
+    --loading-text-gradient: linear-gradient(90deg, transparent 0% 16.66%, black 33.33% 50%,  transparent 66.66% 75%);
     --gold-crayola: hsl(206, 33%, 80%);
     --eerie-black-3: hsla(180, 2%, 8%, 1);
 }
