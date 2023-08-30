@@ -213,7 +213,7 @@ img,picture,video,canvas,svg{
 .header{
     position: fixed;
     top:0; left:0; right: 0;
-    z-index: 1000;
+    z-index: 9;
     background: #ffffff87;
     backdrop-filter: blur(20px);
     box-shadow: var(--box-shadow);

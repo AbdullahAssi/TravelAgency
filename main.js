@@ -1,4 +1,3 @@
-// import './styles/gallery.scss';
 import './styles/style.css';
 
 
